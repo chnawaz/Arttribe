@@ -11,7 +11,7 @@ function Navbar() {
           </p>
         </div>
         <div className="flex flex-row gap-[12px] justify-between ">
-            <div className="flex flex-row gap-[4px] py-[4px] px-[8px] rounded-[12px] bg-[#25272E] items-center cursor-pointer">
+            <div className="flex flex-row gap-[4px] py-[4px] px-[8px] rounded-[12px] bg-[#262626] items-center cursor-pointer">
                 <img src="/images/Polygon 1.svg" alt="" className="h-[16px] w-[16px]" />
                 <p className="font-[clashGrotesk] font-[500] text-[16px] leading-[150%] tracking-[0.02em]   text-[#D4D4D4]">49 Credits</p>
             </div>

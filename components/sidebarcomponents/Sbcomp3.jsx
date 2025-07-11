@@ -9,7 +9,7 @@ function Sbcomp3({head1, head2 , head3 , head4, image1,image2,image3,image4,}) {
         </p>
         <div className="flex flex-col gap-[12px]">
           {/* 1st start */}
-          <div className="flex flex-row  p-[6px] rounded-[12px] bg-[#25272E] items-center justify-between">
+          <div className="flex flex-row  p-[6px] rounded-[12px] bg-[#FFFFFF0F] items-center justify-between">
             <div className="flex flex-row gap-[6px] items-center">
               <img src={image1} alt="" className="h-[32px] w-[32px]" />
               <p className="font-[clashGrotesk] font-[500] text-[14px] leading-[150%] tracking-[0.02em]">
@@ -20,7 +20,7 @@ function Sbcomp3({head1, head2 , head3 , head4, image1,image2,image3,image4,}) {
           </div>
           {/* 1st end */}
           {/* 2nd start */}
-          <div className="flex flex-row  p-[6px] rounded-[12px] bg-[#25272E] items-center justify-between">
+          <div className="flex flex-row  p-[6px] rounded-[12px] bg-[#FFFFFF0F] items-center justify-between">
             <div className="flex flex-row gap-[6px] items-center">
               <img src={image3} alt="" className="h-[32px] w-[32px]" />
               <p className="font-[clashGrotesk] font-[500] text-[14px] leading-[150%] tracking-[0.02em]">
@@ -31,7 +31,7 @@ function Sbcomp3({head1, head2 , head3 , head4, image1,image2,image3,image4,}) {
           </div>
           {/* 2nd end */}
           {/* 3rd start */}
-          <div className="flex flex-row  p-[6px] rounded-[12px] bg-[#25272E] items-center justify-between">
+          <div className="flex flex-row  p-[6px] rounded-[12px] bg-[#FFFFFF0F] items-center justify-between">
             <div className="flex flex-row gap-[6px] items-center">
               <img src={image4} alt="" className="h-[32px] w-[32px]" />
               <p className="font-[clashGrotesk] font-[500] text-[14px] leading-[150%] tracking-[0.02em]">
