@@ -1,14 +1,18 @@
+"use client";
 import React from "react";
+
 import Sbcomponent1 from "@/components/sidebarcomponents/Sbcomponent1";
 import Sbcomp2 from "@/components/sidebarcomponents/Sbcomp2";
 import Sbcomp3 from "@/components/sidebarcomponents/Sbcomp3";
 import Sbcomp4 from "@/components/sidebarcomponents/Sbcomp4";
 // import logo from "@/public/images/logo.png"
+import { useState } from "react";
 
 function Sidebar() {
+  const [enabled, setEnabled] = useState(false);
   return (
     <>
-      <div className=" w-[280px]  p-4 flex flex-col gap-[24px] rounded-[20px] bg-[#0E0F11] sticky  ">
+      <div className=" w-[280px]   p-4 flex flex-col gap-[24px] rounded-[20px] bg-[#0E0F11] sticky min-h-[100vh]">
         <div className="flex flex-row gap-[14px] items-center ">
           <img src="/images/logo.svg" alt="" className="w-[29.9px] h-[28px]" />
           <p className="font-[clashGrotesk] font-[600] text-[22px] leading-[150%] tracking-[0.02em]   text-white">
@@ -71,8 +75,32 @@ function Sidebar() {
         <div className="border border-gray-800"></div>
 
         <div className="flex flex-col gap-[8px]">
-          <p className="font-[clashGrotesk] font-[600] text-[14px] leading-[1.5] tracking-[0.02em] text-white">Enhance Prompt</p>
-          <div className="flex flex-row gap-[8px]"></div>
+          <p className="font-[clashGrotesk] font-[600] text-[14px] leading-[1.5] tracking-[0.02em] text-white">
+            Enhance Prompt
+          </p>
+          <div className="flex flex-row gap-[8px] items-center">
+            <button
+              onClick={() => setEnabled(!enabled)}
+              className={`relative inline-flex h-[14px]  w-[34px] items-center rounded-full transition-colors duration-300 ${
+                enabled ? "bg-[#00FF00]" : "bg-[#A3A3A3]"
+              }`}
+            >
+              <span
+                className={`inline-block h-5 w-5 transform rounded-full bg-white transition-transform duration-300 ${
+                  enabled ? "translate-x-4" : "translate-x-0"
+                }`}
+              />
+            </button>
+            {enabled ? (
+              <p className="font-[400] text-[14px] leading-[150%] tracking-[0px]">
+                On
+              </p>
+            ) : (
+              <p className="font-[400] text-[14px] leading-[150%] tracking-[0px]">
+                Off
+              </p>
+            )}
+          </div>
         </div>
 
         {/* 3rd div end */}

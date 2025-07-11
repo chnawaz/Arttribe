@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 function Main() {
   return (
     <>
-    <div className='h-[100%]  w-full flex flex-col rounded-[16px] p-[24px] gap-[54px] bg-[#0E0F11]  justify-center'>
+    <div className='h-[100%]  w-full flex flex-col rounded-[16px] p-[24px] gap-[54px] bg-[#0E0F11]  justify-center mt-[68px]  '>
         <div className='max-w-[786px] w-full mx-auto py-[32px] px-[24px] gap-[12px] rounded-[16px] border-dashed border-[1px] border-[#525252] flex flex-col items-center justify-center'>
             <img src="/images/Gallery_2.svg" alt="" />
             <div className='flex flex-col gap-[4px] items-center justify-center'>
