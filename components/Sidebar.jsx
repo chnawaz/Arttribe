@@ -15,21 +15,22 @@ function Sidebar() {
       <div className=" w-[280px]   p-4 flex flex-col gap-[24px] rounded-[20px] bg-[#0E0F11] sticky min-h-[100vh]">
         <div className="flex flex-row gap-[14px] items-center ">
           <img src="/images/logo.svg" alt="" className="w-[29.9px] h-[28px]" />
-          <p className="font-[clashGrotesk] font-[600] text-[22px] leading-[150%] tracking-[0.02em]   text-white">
+          <p className="font-[clashGrotesk] font-[600] text-[22px] leading-[150%] tracking-[0.02em]   text-white cursor-pointer">
             Arttribe
           </p>
         </div>
 
         {/* 2nd div start */}
-        <div className="flex flex-row gap-[8px] items-center ">
+        <div className="flex flex-row gap-[8px] items-center cursor-pointer ">
           <img
             src="/images/Arrow_Left.svg"
             alt=""
             className="w-[24px] h-[24px]"
           />
-          <p className="font-[Satoshi] font-[500] text-[14px] leading-[1.5] tracking-[0] text-white">
+          {/* <p className="font-[Satoshi] font-[500] text-[14px] leading-[1.5] tracking-[0] text-white">
             Back to Image Studio Dashboard
-          </p>
+          </p> */}
+          <button className="font-[Satoshi] font-[500] text-[14px] leading-[1.5] tracking-[0] text-white cursor-pointer">Back to Image Studio Dashboard</button>
         </div>
         {/* 2nd div end */}
         {/* 3rd div start */}
@@ -78,10 +79,10 @@ function Sidebar() {
           <p className="font-[clashGrotesk] font-[600] text-[14px] leading-[1.5] tracking-[0.02em] text-white">
             Enhance Prompt
           </p>
-          <div className="flex flex-row gap-[8px] items-center">
+          <div className="flex flex-row gap-[8px] items-center cursor-pointer">
             <button
               onClick={() => setEnabled(!enabled)}
-              className={`relative inline-flex h-[14px]  w-[34px] items-center rounded-full transition-colors duration-300 ${
+              className={`relative inline-flex h-[14px]  w-[34px] items-center rounded-full transition-colors duration-300 cursor-pointer ${
                 enabled ? "bg-[#00FF00]" : "bg-[#A3A3A3]"
               }`}
             >

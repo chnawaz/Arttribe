@@ -13,13 +13,15 @@ function Navbar() {
         <div className="flex flex-row gap-[12px] justify-between ">
             <div className="flex flex-row gap-[4px] py-[4px] px-[8px] rounded-[12px] bg-[#262626] items-center cursor-pointer">
                 <img src="/images/Polygon 1.svg" alt="" className="h-[16px] w-[16px]" />
-                <p className="font-[clashGrotesk] font-[500] text-[16px] leading-[150%] tracking-[0.02em]   text-[#D4D4D4]">49 Credits</p>
+                {/* <p className="font-[clashGrotesk] font-[500] text-[16px] leading-[150%] tracking-[0.02em]   text-[#D4D4D4]">49 Credits</p> */}
+                <button className="font-[clashGrotesk] font-[500] text-[16px] leading-[150%] tracking-[0.02em]   text-[#D4D4D4] cursor-pointer">49 Credits</button>
             </div>
             <div className="flex flex-row gap-[4px] py-[4px] px-[8px] rounded-[12px] bg-[#00FF001A] items-center text-[#00FF00] cursor-pointer">
                 <img src="/images/Diamond.svg" alt="" className="h-[28px] w-[28px]" />
-                <p className="font-[clashGrotesk] font-[500] text-[16px] leading-[150%] tracking-[0.02em] ">Upgrade</p>
+                {/* <p className="font-[clashGrotesk] font-[500] text-[16px] leading-[150%] tracking-[0.02em] ">Upgrade</p> */}
+                <button className="font-[clashGrotesk] font-[500] text-[16px] leading-[150%] tracking-[0.02em]  cursor-pointer">Upgrade</button>
             </div>
-            <img src="/images/Ellipse 1.png" alt=""  />
+            <img src="/images/Ellipse 1.png" alt="" className="cursor-pointer"  />
         </div>
       </div>
     </>

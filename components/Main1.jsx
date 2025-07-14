@@ -63,7 +63,7 @@ function Main() {
           <input
             type="text"
             placeholder=" Write a prompt or click generate to continue"
-            className="font-[satoshi] font-[500] text-[14px] leading-[1.5] tracking-[0.02em] placeholder:text-[#A3A3A3] max-w-[786px] w-full mx-auto  flex flex-row items-center justify-between rounded-[12px] py-[17.5px] pr-[12px] pl-[24px] bg-[#1C1D1F]"
+            className="font-[satoshi] font-[500] text-[14px] leading-[1.5] tracking-[0.02em] placeholder:text-[#A3A3A3] max-w-[786px] w-full mx-auto  flex flex-row items-center justify-between rounded-[12px] py-[17.5px] pr-[12px] pl-[24px] bg-[#1C1D1F] hover:bg-[#ffffff09] duration-400 "
           />
           <button className="absolute top-3  right-3.5 flex flex-row items-center gap-[4px] py-[4px] px-[12px] rounded-[8px] bg-[#00FF00]  cursor-pointer font-[clashGrotesk] font-[500] text-[16px] leading-[150%] tracking-[0.02em] text-black ">
             Generate

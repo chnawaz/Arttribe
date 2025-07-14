@@ -7,7 +7,7 @@ function Sbcomponent1({ head1, head2, subhead, image1, image2 }) {
         <p className="font-[clashGrotesk] font-[600] text-[14px] leading-[1.5] tracking-[0.02em] text-white">
           {head1}
         </p>
-        <div className="flex flex-row gap-[8px] p-[12px] rounded-[12px] bg-[#FFFFFF0F] items-center justify-center">
+        <div className="flex flex-row gap-[8px] p-[12px] rounded-[12px] bg-[#FFFFFF0F] items-center justify-center hover:bg-[#ffffff09] duration-400 cursor-pointer">
           <img src={image1} alt="" className="h-[32px] w-[32px]" />
           <div className="flex flex-col gap-[4px] ">
             <p className="font-[clashGrotesk] font-[600] text-[14px] leading-[1] tracking-[0.02em] text-white">
