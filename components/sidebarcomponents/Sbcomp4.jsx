@@ -12,7 +12,7 @@ function Sbcomp4({ head1 }) {
         <div className="flex flex-row gap-[12px] items-center justify-between  ">
           <div
             onClick={() => setCurr(1)}
-            className={`bg-[#FFFFFF0F] px-[22px] py-[7.5px] rounded-[8px] hover:bg-[#ffffff09]  cursor-pointer ${
+            className={`bg-[#FFFFFF0F] px-[22px] py-[5px] rounded-[8px] hover:bg-[#ffffff09]  cursor-pointer ${
               curr == 1 ? "border-[1px]" : ""
             }`}
           >
@@ -22,7 +22,7 @@ function Sbcomp4({ head1 }) {
           </div>
           <div
             onClick={() => setCurr(2)}
-            className={`bg-[#FFFFFF0F] px-[22px] py-[7.5px] rounded-[8px] hover:bg-[#ffffff09]  cursor-pointer ${
+            className={`bg-[#FFFFFF0F] px-[22px] py-[5px] rounded-[8px] hover:bg-[#ffffff09]  cursor-pointer ${
               curr == 2 ? "border-[1px]" : ""
             }`}
           >
@@ -32,7 +32,7 @@ function Sbcomp4({ head1 }) {
           </div>
           <div
             onClick={() => setCurr(3)}
-            className={`bg-[#FFFFFF0F] px-[22px] py-[7.5px] rounded-[8px] hover:bg-[#ffffff09]  cursor-pointer ${
+            className={`bg-[#FFFFFF0F] px-[22px] py-[5px] rounded-[8px] hover:bg-[#ffffff09]  cursor-pointer ${
               curr == 3 ? "border-[1px]" : ""
             }`}
           >
@@ -42,7 +42,7 @@ function Sbcomp4({ head1 }) {
           </div>
           <div
             onClick={() => setCurr(4)}
-            className={`bg-[#FFFFFF0F] px-[22px] py-[7.5px] rounded-[8px] hover:bg-[#ffffff09]  cursor-pointer ${
+            className={`bg-[#FFFFFF0F] px-[22px] py-[5px] rounded-[8px] hover:bg-[#ffffff09]  cursor-pointer ${
               curr == 4 ? "border-[1px]" : ""
             }`}
           >
