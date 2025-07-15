@@ -4,11 +4,12 @@
 import { fal } from "@fal-ai/client";
 import React, { useRef, useState } from "react";
 fal.config({
-  credentials:
-    "e20ace8d-2635-42d0-bb65-ec175e40b30e:904859ca20d57f13f9180f25149d90f8",
+  credentials:process.env.NEXT_PUBLIC_FAL_API_KEY,
 });
+// console.log("Fal API Key:", process.env.NEXT_PUBLIC_FAL_API_KEY);
 
-function Main() {
+function Main2() {
+  
     const [image, setImage] = useState(null);
     
 
@@ -52,14 +53,14 @@ const fileInputRef = useRef(null); // to trigger hidden input
       const uploadedUrl = await fal.storage.upload(file);
 
       // Call Flux image-to-image model
-      const result = await fal.subscribe("fal-ai/flux/dev/image-to-image", {
+      const result = await fal.subscribe("fal-ai/flux-kontext-lora", {
         input: {
           image_url: uploadedUrl,
           prompt: prompt,
           strength: 0.95,
           num_inference_steps: 40,
           guidance_scale: 3.5,
-          num_images: 1,
+          num_images: 3,
           enable_safety_checker: true,
           output_format: "png",
           acceleration: "none",
@@ -68,7 +69,7 @@ const fileInputRef = useRef(null); // to trigger hidden input
       });
 
       console.log("Generation result:", result);
-      setOutputImage(result.data.images[0]?.url);
+      setOutputImage(result.data.images);
     } catch (err) {
       console.error(err);
       setError("Something went wrong. Check the console.");
@@ -149,11 +150,21 @@ const fileInputRef = useRef(null); // to trigger hidden input
         {outputImage && (
           <div className="mt-6">
             <h3 className="text-lg font-semibold mb-2">Result</h3>
-            <img
+            {/* <img
               src={outputImage}
               alt="Generated"
               className="rounded border h-70 w-70 object-cover"
+            /> */}
+            <div className="flex flex-row items-center justify-center flex-wrap gap-5">
+              {outputImage.map((e,index)=>(
+                <img
+                key={index}
+              src={e.url || e}
+              alt="Generated"
+              className="rounded border h-70 w-70 object-fill"
             />
+              ))}
+            </div>
           </div>
         )}
       </div>
@@ -161,4 +172,4 @@ const fileInputRef = useRef(null); // to trigger hidden input
   );
 }
 
-export default Main;
+export default Main2;
